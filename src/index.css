@@ -11,3 +11,83 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.my-button {
+  background-color: blueviolet;
+  color: white;
+  border-radius: 2rem;
+  padding: 12px 24px;              /* espacio interno */
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease; 
+}
+.my-button:hover {
+  background-color: darkviolet;
+  transform: scale(1.05); /* animación suave */
+}
+
+.cotizacion-card {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.descripcion {
+  margin: 0 0 15px 0;
+  color: #999;
+  font-size: 0.9rem;
+}
+
+
+.precios {
+  margin: 5px 0 0 0;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.precio {
+  margin: 5px 0 0 0;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.footer {
+  border-top: 1px solid #333;
+  padding-top: 10px;
+  color: #666;
+  font-size: 0.85rem;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.cotizaciones-container {
+  max-width: 1400px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.grid {
+  display: grid;            /* ← IMPORTANTE: activa el sistema de grid */
+  gap: 20px;                /* espacio entre las tarjetas */
+}
+
+.home-page {
+  background-color: #0a0a0a;
+  min-height: 100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.header-title {
+  margin: 0;
+  padding: 40px 20px;        /* ✅ Agrega espacio */
+  font-size: 2.5rem;
+  text-align: center;        /* ✅ Centra el texto */
+} 
