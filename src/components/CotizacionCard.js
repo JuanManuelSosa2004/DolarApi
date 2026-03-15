@@ -5,12 +5,14 @@ export const CotizacionCard=({nombre, descripcion, compra, venta,timestamp}) =>{
             <p className="descripcion">{descripcion}</p>
 
             <div className="precios">
-                <h4 className="precio">Compra: {compra}</h4>
-                <h4 className="precio">Venta: {venta}</h4>
-            </div>
-
-            <div className="footer">
-                <p>Última actualización: {timestamp}</p>
+                <div className="precio-item compra">
+                    <span className="label">COMPRA</span>
+                    <span className="valor">${compra}</span>
+                </div>
+                <div className="precio-item venta">
+                    <span className="label">VENTA</span>
+                    <span className="valor">${venta}</span>
+                </div>
             </div>
         </div>
     )

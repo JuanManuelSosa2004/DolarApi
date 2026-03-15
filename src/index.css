@@ -12,26 +12,28 @@ code {
     monospace;
 }
 
-.my-button {
-  background-color: blueviolet;
-  color: white;
-  border-radius: 2rem;
-  padding: 12px 24px;              /* espacio interno */
-  font-size: 1rem;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s ease; 
-}
-.my-button:hover {
-  background-color: darkviolet;
-  transform: scale(1.05); /* animación suave */
-}
 
+.cotizacion-title  {
+  margin: 0 0 8px 0;
+  font-size: 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 .cotizacion-card {
-  background: #1a1a1a;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
   border: 1px solid #333;
   border-radius: 8px;
   padding: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.cotizacion-card:hover {
+  transform: translateY(8px);
+  box-shadow: 0 12px 24px rgba(102, 126, 234, 0.2);
+  border-color: #667eea;
 }
 
 .descripcion {
@@ -42,19 +44,32 @@ code {
 
 
 .precios {
-  margin: 5px 0 0 0;
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: #fff;
+ display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin: 20px 0;
 }
 
-.precio {
-  margin: 5px 0 0 0;
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: #fff;
+.precio-item {
+  background: rgba(102, 126, 234, 0.1);
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  border-left: 3px solid #667eea;
 }
 
+
+.precio-item .label {
+  font-size: 0.75rem;
+  color: #999;
+  text-transform: uppercase;
+}
+.precio-item .valor {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 5px;
+}
 .footer {
   border-top: 1px solid #333;
   padding-top: 10px;
@@ -89,5 +104,9 @@ code {
   margin: 0;
   padding: 40px 20px;        /* ✅ Agrega espacio */
   font-size: 2.5rem;
-  text-align: center;        /* ✅ Centra el texto */
+  text-align: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-size: 200% 200%;
+  animation: gradient 15s ease infinite;
+  box-shadow: 0 8px 32px rgba(102, 126, 234, 0.2);        /* ✅ Centra el texto */
 } 
